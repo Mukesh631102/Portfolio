@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Mukesh P — AI Engineer & Data Architect with 9.13 CGPA. Portfolio showcasing ML pipelines, AR agriculture, financial automation, and more." />
+  <title>Mukesh P | AI Engineer &amp; Data Architect</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ═══════════════════════════════════════════ CURSOR GLOW -->
+  <div id="cursor-glow" aria-hidden="true"></div>
+
+  <!-- ═══════════════════════════════════════════ NOISE OVERLAY -->
+  <div class="noise-overlay" aria-hidden="true"></div>
+
+  <!-- ═══════════════════════════════════════════ NAV -->
+  <nav id="navbar" role="navigation" aria-label="Primary navigation">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo" aria-label="Home">
+        <span class="logo-bracket">[</span>MP<span class="logo-bracket">]</span>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="https://www.linkedin.com/in/mukesh-p-4a3873297/" target="_blank" rel="noopener noreferrer"
+        class="nav-cta" id="hire-btn" aria-label="Hire Mukesh on LinkedIn">
+        <span>Hire Me</span>
+        <div class="btn-glow"></div>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <a href="#about" class="mobile-link">About</a>
+      <a href="#experience" class="mobile-link">Experience</a>
+      <a href="#projects" class="mobile-link">Projects</a>
+      <a href="#skills" class="mobile-link">Skills</a>
+      <a href="#certifications" class="mobile-link">Certs</a>
+      <a href="#contact" class="mobile-link">Contact</a>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ═══════════════════════════════════════════ HERO -->
+    <section id="hero" class="hero-section" aria-label="Hero introduction">
+      <div class="hero-bg-grid" aria-hidden="true"></div>
+      <div class="hero-orb orb-1" aria-hidden="true"></div>
+      <div class="hero-orb orb-2" aria-hidden="true"></div>
+      <div class="hero-orb orb-3" aria-hidden="true"></div>
+
+      <div class="hero-content">
+        <div class="hero-badge reveal-up">
+          <span class="badge-dot"></span>
+          <span>Available for Opportunities</span>
+        </div>
+
+        <h1 class="hero-title reveal-up">
+          <span class="title-line">Mukesh P</span>
+          <span class="title-gradient">AI Engineer</span>
+          <span class="title-amp">&</span>
+          <span class="title-gradient">Data Architect</span>
+        </h1>
+
+        <p class="hero-cgpa reveal-up">
+          <span class="mono-tag">CGPA</span>
+          <span class="cgpa-value">9.13</span>
+          <span class="cgpa-divider">/</span>
+          <span class="cgpa-max">10.0</span>
+        </p>
+
+        <!-- IMPACT CARD -->
+        <div class="impact-card glass-card tilt-card reveal-up" id="impact-card" aria-label="Key impact metric">
+          <div class="impact-icon" aria-hidden="true">⚡</div>
+          <div class="impact-content">
+            <p class="impact-label">Production Impact</p>
+            <p class="impact-stat">
+              <span class="stat-number" data-target="40">0</span><span class="stat-percent">%</span>
+              <span class="stat-desc">reduction in data preparation latency</span>
+            </p>
+            <p class="impact-detail">
+              Architected production-grade ML workflows at <strong>Mecypher AI</strong> — transforming how raw data
+              becomes intelligence.
+            </p>
+          </div>
+          <div class="impact-pulse" aria-hidden="true"></div>
+        </div>
+
+        <div class="hero-cta-row reveal-up">
+          <a href="#projects" class="cta-primary" id="view-work-btn">
+            <span>View My Work</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+            </svg>
+          </a>
+          <a href="#contact" class="cta-secondary" id="contact-btn">Get in Touch</a>
+        </div>
+
+        <!-- FLOATING TAGS -->
+        <div class="floating-tags reveal-up" aria-hidden="true">
+          <span class="f-tag">PyTorch</span>
+          <span class="f-tag">ML Pipelines</span>
+          <span class="f-tag">AWS</span>
+          <span class="f-tag">Databricks</span>
+        </div>
+      </div>
+
+      <div class="hero-scroll-hint" aria-hidden="true">
+        <div class="scroll-line"></div>
+        <span>scroll</span>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ ABOUT -->
+    <section id="about" class="section about-section" aria-label="About Mukesh">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-tag">01 / About</span>
+          <h2 class="section-title">Building at the Intersection of <span class="gradient-text">AI & Systems</span></h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-text reveal-left">
+            <p class="about-lead">I'm a Computer Science undergraduate who doesn't just study AI — I deploy it.</p>
+            <p class="about-body">From architecting multi-agent financial systems to building AR-powered precision
+              agriculture tools using satellite imagery, my work sits at the bleeding edge of applied machine learning.
+            </p>
+            <p class="about-body">With a 9.13 CGPA and hands-on production experience at Mecypher AI, I bring both
+              academic rigor and real-world engineering discipline to every project.</p>
+            <div class="about-stats">
+              <div class="stat-card glass-card tilt-card">
+                <span class="stat-big">40%</span>
+                <span class="stat-small">Latency Reduction</span>
+              </div>
+              <div class="stat-card glass-card tilt-card">
+                <span class="stat-big">7K+</span>
+                <span class="stat-small">Records Analyzed</span>
+              </div>
+              <div class="stat-card glass-card tilt-card">
+                <span class="stat-big">1st</span>
+                <span class="stat-small">Hackathon Winner</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-visual reveal-right">
+            <div class="avatar-container glass-card tilt-card" aria-label="Mukesh P developer profile">
+              <div class="avatar-inner">
+                <div class="avatar-initial">M</div>
+                <div class="avatar-ring ring-1" aria-hidden="true"></div>
+                <div class="avatar-ring ring-2" aria-hidden="true"></div>
+                <div class="avatar-ring ring-3" aria-hidden="true"></div>
+              </div>
+              <div class="avatar-info">
+                <p class="avatar-name">Mukesh P</p>
+                <p class="avatar-role">CS Undergraduate · AI Engineer</p>
+                <div class="avatar-badges">
+                  <span class="abadge">🏆 Red Hat COE Winner</span>
+                  <span class="abadge">⭐ NPTEL Elite + Silver</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ EXPERIENCE -->
+    <section id="experience" class="section experience-section" aria-label="Professional Experience">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-tag">02 / Experience</span>
+          <h2 class="section-title">Where Theory Meets <span class="gradient-text">Production</span></h2>
+        </div>
+        <div class="experience-timeline">
+          <div class="exp-card glass-card tilt-card reveal-up" id="mecypher-card">
+            <div class="exp-header">
+              <div class="exp-company-info">
+                <div class="exp-logo" aria-hidden="true">
+                  <span>M</span>
+                </div>
+                <div>
+                  <h3 class="exp-company">Mecypher AI <span class="exp-location">India</span></h3>
+                  <p class="exp-role">AI / ML Engineering Intern</p>
+                </div>
+              </div>
+              <div class="exp-meta">
+                <span class="exp-duration">Aug 2025 – Feb 2026</span>
+                <span class="exp-badge">Active</span>
+              </div>
+            </div>
+            <div class="exp-impact-bar">
+              <div class="exp-impact-fill" style="width: 0%" data-width="40"
+                aria-label="40% latency reduction achieved"></div>
+              <span class="exp-impact-label">Latency Reduction: <strong>40%</strong></span>
+            </div>
+            <ul class="exp-bullets" role="list">
+              <li class="exp-bullet">
+                <span class="bullet-icon" aria-hidden="true">▸</span>
+                Architected end-to-end <strong>production-grade ML workflows</strong> that slashed data preparation
+                latency by 40%, enabling real-time decision pipelines
+              </li>
+              <li class="exp-bullet">
+                <span class="bullet-icon" aria-hidden="true">▸</span>
+                Designed and deployed <strong>automated data pipeline infrastructure</strong> integrating ingestion,
+                transformation, and model-serving layers into a unified system
+              </li>
+              <li class="exp-bullet">
+                <span class="bullet-icon" aria-hidden="true">▸</span>
+                Led <strong>cross-system integration</strong> between data warehousing platforms (Databricks, AWS) and
+                ML model registries for seamless model lifecycle management
+              </li>
+              <li class="exp-bullet">
+                <span class="bullet-icon" aria-hidden="true">▸</span>
+                Built <strong>PySpark-based ETL optimizations</strong> reducing processing time on large-scale datasets
+                and improving throughput for downstream analytics teams
+              </li>
+              <li class="exp-bullet">
+                <span class="bullet-icon" aria-hidden="true">▸</span>
+                Implemented <strong>FastAPI microservices</strong> to expose ML model endpoints with health monitoring,
+                versioning, and automated rollback capabilities
+              </li>
+            </ul>
+            <div class="exp-tech-stack">
+              <span class="tech-pill">Python</span>
+              <span class="tech-pill">PySpark</span>
+              <span class="tech-pill">Databricks</span>
+              <span class="tech-pill">AWS</span>
+              <span class="tech-pill">FastAPI</span>
+              <span class="tech-pill">SQL</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ PROJECTS -->
+    <section id="projects" class="section projects-section" aria-label="Projects">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-tag">03 / Projects</span>
+          <h2 class="section-title">Production-Grade <span class="gradient-text">Engineering</span></h2>
+          <p class="section-subtitle">Systems I've built — from satellite imagery to multi-agent AI</p>
+        </div>
+
+        <div class="bento-grid">
+
+          <!-- PROJECT 1: AR Agriculture (LARGE) -->
+          <article class="bento-card bento-large glass-card tilt-card reveal-up" id="project-agri"
+            aria-label="AR Precision Agriculture project">
+            <div class="bento-badge winner-badge">🏆 Hackathon Winner</div>
+            <div class="bento-visual agri-visual" aria-hidden="true">
+              <div class="agri-grid">
+                <div class="agri-cell active"></div>
+                <div class="agri-cell"></div>
+                <div class="agri-cell active"></div>
+                <div class="agri-cell"></div>
+                <div class="agri-cell active"></div>
+                <div class="agri-cell"></div>
+                <div class="agri-cell active"></div>
+                <div class="agri-cell"></div>
+                <div class="agri-cell active"></div>
+              </div>
+              <div class="agri-satellite" aria-hidden="true">🛰️</div>
+            </div>
+            <div class="bento-content">
+              <div class="bento-tag-row">
+                <span class="bento-tag">Computer Vision</span>
+                <span class="bento-tag">PyTorch</span>
+                <span class="bento-tag">AR</span>
+              </div>
+              <h3 class="bento-title">AgroScope — AR Precision Agriculture</h3>
+              <p class="bento-desc">Multimodal agricultural intelligence system combining <strong>ResNet-18</strong> for
+                crop disease detection with <strong>Sentinel-2 satellite imagery</strong> processed in PyTorch. Overlays
+                real-time recommendations via augmented reality for field-level precision farming decisions.</p>
+              <div class="bento-metrics">
+                <div class="bm-item">
+                  <span class="bm-label">Architecture</span>
+                  <span class="bm-val">ResNet-18</span>
+                </div>
+                <div class="bm-item">
+                  <span class="bm-label">Data Source</span>
+                  <span class="bm-val">Sentinel-2</span>
+                </div>
+                <div class="bm-item">
+                  <span class="bm-label">Award</span>
+                  <span class="bm-val">1st Place</span>
+                </div>
+              </div>
+              <div class="bento-stack">
+                <span class="tech-pill">ResNet-18</span>
+                <span class="tech-pill">PyTorch</span>
+                <span class="tech-pill">Sentinel-2</span>
+                <span class="tech-pill">AR</span>
+                <span class="tech-pill">Python</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 2: Financial Automation (MEDIUM) -->
+          <article class="bento-card bento-medium glass-card tilt-card reveal-up" id="project-finance"
+            aria-label="Financial Automation Platform project">
+            <div class="bento-visual finance-visual" aria-hidden="true">
+              <div class="agent-nodes">
+                <div class="agent-node retriever">R</div>
+                <div class="agent-line"></div>
+                <div class="agent-node drafter">D</div>
+                <div class="agent-line"></div>
+                <div class="agent-node verifier">V</div>
+              </div>
+            </div>
+            <div class="bento-content">
+              <div class="bento-tag-row">
+                <span class="bento-tag">LLM</span>
+                <span class="bento-tag">RAG</span>
+                <span class="bento-tag">Multi-Agent</span>
+              </div>
+              <h3 class="bento-title">Financial Automation Platform</h3>
+              <p class="bento-desc">RAG-driven orchestration with a <strong>3-agent pipeline</strong> — Retriever,
+                Drafting, and Verifier agents working in concert to automate complex financial document workflows with
+                built-in validation.</p>
+              <div class="bento-stack">
+                <span class="tech-pill">RAG</span>
+                <span class="tech-pill">LangChain</span>
+                <span class="tech-pill">FastAPI</span>
+                <span class="tech-pill">Python</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 3: Churn Analytics (MEDIUM) -->
+          <article class="bento-card bento-medium glass-card tilt-card reveal-up" id="project-churn"
+            aria-label="Customer Churn Analytics project">
+            <div class="bento-visual churn-visual" aria-hidden="true">
+              <div class="churn-chart">
+                <div class="churn-bar" style="height: 60%"><span>72%</span></div>
+                <div class="churn-bar" style="height: 85%"><span>91%</span></div>
+                <div class="churn-bar active" style="height: 40%"><span>47%</span></div>
+                <div class="churn-bar" style="height: 70%"><span>78%</span></div>
+                <div class="churn-bar active" style="height: 95%"><span>100%</span></div>
+              </div>
+            </div>
+            <div class="bento-content">
+              <div class="bento-tag-row">
+                <span class="bento-tag">Analytics</span>
+                <span class="bento-tag">Power BI</span>
+                <span class="bento-tag">SQL</span>
+              </div>
+              <h3 class="bento-title">Customer Churn Analytics</h3>
+              <p class="bento-desc">Predictive modeling pipeline on <strong>7,000+ customer records</strong> with SQL
+                query optimization and Power BI dashboards delivering executive-level churn insights with actionable
+                retention strategies.</p>
+              <div class="bento-stack">
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">Power BI</span>
+                <span class="tech-pill">SQL</span>
+                <span class="tech-pill">Scikit-learn</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 4: Face Recognition Auth (LARGE) -->
+          <article class="bento-card bento-large glass-card tilt-card reveal-up" id="project-facerec"
+            aria-label="Face Recognition Authentication System project">
+            <div class="bento-visual facerec-visual" aria-hidden="true">
+              <div class="face-scan-wrapper">
+                <div class="face-circle">
+                  <div class="face-icon">👤</div>
+                  <div class="scan-line"></div>
+                </div>
+                <div class="face-dots">
+                  <span class="fdot fdot-tl"></span>
+                  <span class="fdot fdot-tr"></span>
+                  <span class="fdot fdot-bl"></span>
+                  <span class="fdot fdot-br"></span>
+                </div>
+                <div class="face-verified">✓ VERIFIED</div>
+              </div>
+            </div>
+            <div class="bento-content">
+              <div class="bento-tag-row">
+                <span class="bento-tag">Computer Vision</span>
+                <span class="bento-tag">OpenCV</span>
+                <span class="bento-tag">Biometrics</span>
+              </div>
+              <h3 class="bento-title">Face Recognition Authentication System</h3>
+              <p class="bento-desc">Engineered a <strong>real-time facial recognition pipeline</strong> using Python and
+                OpenCV to automate attendance tracking at the Tech Vayuna Quantum Conclave — managing a live database of
+                <strong>75+ participant IDs</strong> with low-latency identity verification.
+              </p>
+              <div class="bento-metrics">
+                <div class="bm-item">
+                  <span class="bm-label">Event</span>
+                  <span class="bm-val">Tech Vayuna</span>
+                </div>
+                <div class="bm-item">
+                  <span class="bm-label">Participants</span>
+                  <span class="bm-val">75+ IDs</span>
+                </div>
+                <div class="bm-item">
+                  <span class="bm-label">Duration</span>
+                  <span class="bm-val">Jan – Feb 2025</span>
+                </div>
+              </div>
+              <ul class="bento-bullets">
+                <li><span class="bullet-icon" aria-hidden="true">▸</span> Integrated face detection &amp; feature
+                  embedding extraction for ID verification against registered database</li>
+                <li><span class="bullet-icon" aria-hidden="true">▸</span> Replaced manual guest-list verification —
+                  significantly accelerating participant onboarding speed</li>
+              </ul>
+              <div class="bento-stack">
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">OpenCV</span>
+                <span class="tech-pill">Face Recognition</span>
+                <span class="tech-pill">Image Processing</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section skills-section" aria-label="Technical Skills">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-tag">04 / Skills</span>
+          <h2 class="section-title">The <span class="gradient-text">Tech Arsenal</span></h2>
+        </div>
+        <div class="skills-orbit-wrapper reveal-up">
+          <div class="skills-center-orb" aria-hidden="true">
+            <span>AI</span>
+          </div>
+          <div class="skills-cloud" role="list" aria-label="Technical skills">
+            <div class="skill-pill tilt-card" role="listitem" id="skill-python" style="--delay: 0s">
+              <span class="skill-icon">🐍</span>
+              <span class="skill-name">Python</span>
+              <div class="skill-bar-wrap">
+                <div class="skill-bar" data-width="95"></div>
+              </div>
+            </div>
+            <div class="skill-pill tilt-card" role="listitem" id="skill-sql" style="--delay: 0.1s">
+              <span class="skill-icon">🗄️</span>
+              <span class="skill-name">SQL</span>
+              <div class="skill-bar-wrap">
+                <div class="skill-bar" data-width="88"></div>
+              </div>
+            </div>
+            <div class="skill-pill tilt-card" role="listitem" id="skill-databricks" style="--delay: 0.2s">
+              <span class="skill-icon">⚡</span>
+              <span class="skill-name">Databricks</span>
+              <div class="skill-bar-wrap">
+                <div class="skill-bar" data-width="85"></div>
+              </div>
+            </div>
+            <div class="skill-pill tilt-card" role="listitem" id="skill-pytorch" style="--delay: 0.3s">
+              <span class="skill-icon">🔥</span>
+              <span class="skill-name">PyTorch</span>
+              <div class="skill-bar-wrap">
+                <div class="skill-bar" data-width="90"></div>
+              </div>
+            </div>
+            <div class="skill-pill tilt-card" role="listitem" id="skill-fastapi" style="--delay: 0.4s">
+              <span class="skill-icon">🚀</span>
+              <span class="skill-name">FastAPI</span>
+              <div class="skill-bar-wrap">
+                <div class="skill-bar" data-width="82"></div>
+              </div>
+            </div>
+            <div class="skill-pill tilt-card" role="listitem" id="skill-pyspark" style="--delay: 0.5s">
+              <span class="skill-icon">✨</span>
+              <span class="skill-name">PySpark</span>
+              <div class="skill-bar-wrap">
+                <div class="skill-bar" data-width="80"></div>
+              </div>
+            </div>
+            <div class="skill-pill tilt-card" role="listitem" id="skill-aws" style="--delay: 0.6s">
+              <span class="skill-icon">☁️</span>
+              <span class="skill-name">AWS</span>
+              <div class="skill-bar-wrap">
+                <div class="skill-bar" data-width="78"></div>
+              </div>
+            </div>
+            <div class="skill-pill tilt-card" role="listitem" id="skill-c" style="--delay: 0.7s">
+              <span class="skill-icon">⚙️</span>
+              <span class="skill-name">C</span>
+              <div class="skill-bar-wrap">
+                <div class="skill-bar" data-width="82"></div>
+              </div>
+            </div>
+            <div class="skill-pill tilt-card" role="listitem" id="skill-cpp" style="--delay: 0.8s">
+              <span class="skill-icon">🔩</span>
+              <span class="skill-name">C++</span>
+              <div class="skill-bar-wrap">
+                <div class="skill-bar" data-width="78"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skills-categories">
+            <div class="skill-cat glass-card reveal-up">
+              <h4 class="skill-cat-title">Machine Learning</h4>
+              <div class="skill-tags">
+                <span class="s-tag">ResNet</span><span class="s-tag">CNN</span><span class="s-tag">RAG</span>
+                <span class="s-tag">NLP</span><span class="s-tag">Scikit-learn</span>
+              </div>
+            </div>
+            <div class="skill-cat glass-card reveal-up">
+              <h4 class="skill-cat-title">Languages</h4>
+              <div class="skill-tags">
+                <span class="s-tag">Python</span><span class="s-tag">C</span><span class="s-tag">C++</span>
+                <span class="s-tag">SQL</span>
+              </div>
+            </div>
+            <div class="skill-cat glass-card reveal-up">
+              <h4 class="skill-cat-title">Data Engineering</h4>
+              <div class="skill-tags">
+                <span class="s-tag">ETL</span><span class="s-tag">Spark</span><span class="s-tag">Kafka</span>
+                <span class="s-tag">Airflow</span><span class="s-tag">Delta Lake</span>
+              </div>
+            </div>
+            <div class="skill-cat glass-card reveal-up">
+              <h4 class="skill-cat-title">Visualization & BI</h4>
+              <div class="skill-tags">
+                <span class="s-tag">Power BI</span><span class="s-tag">Matplotlib</span><span
+                  class="s-tag">Seaborn</span>
+                <span class="s-tag">Plotly</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ CERTIFICATIONS -->
+    <section id="certifications" class="section certs-section" aria-label="Certifications and Achievements">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-tag">05 / Recognition</span>
+          <h2 class="section-title">Certifications & <span class="gradient-text">Achievements</span></h2>
+        </div>
+
+        <div class="certs-achievements-grid">
+
+          <!-- ACHIEVEMENTS COLUMN -->
+          <div class="achievements-col">
+            <h3 class="col-label reveal-up">Achievements</h3>
+            <div class="achievement-card glass-card tilt-card reveal-up winner-card" id="achievement-hackathon"
+              aria-label="Red Hat COE Hackathon winner">
+              <div class="ach-trophy" aria-hidden="true">🏆</div>
+              <div class="ach-content">
+                <span class="ach-rank">1st Place</span>
+                <h4 class="ach-title">Red Hat COE Hackathon</h4>
+                <p class="ach-project">AgroScope — AR Precision Agriculture System</p>
+                <p class="ach-detail">Multimodal AI system combining computer vision and satellite data, awarded first
+                  place for innovation and technical execution.</p>
+              </div>
+              <div class="ach-glow" aria-hidden="true"></div>
+            </div>
+
+            <div class="achievement-card glass-card tilt-card reveal-up" id="achievement-cgpa"
+              aria-label="Academic performance">
+              <div class="ach-trophy" aria-hidden="true">🎓</div>
+              <div class="ach-content">
+                <span class="ach-rank">9.13 CGPA</span>
+                <h4 class="ach-title">Academic Excellence</h4>
+                <p class="ach-detail">Consistently top-performing student in Computer Science, balancing production
+                  internship work with high academic standards.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- CERTIFICATIONS COLUMN -->
+          <div class="certs-col">
+            <h3 class="col-label reveal-up">Certifications</h3>
+            <div class="cert-timeline">
+
+              <div class="cert-item reveal-up" id="cert-databricks">
+                <div class="cert-dot databricks-dot"></div>
+                <div class="cert-line"></div>
+                <div class="cert-card glass-card tilt-card">
+                  <div class="cert-header">
+                    <div class="cert-org">
+                      <span class="cert-org-icon" aria-hidden="true">⚡</span>
+                      <span>Databricks</span>
+                    </div>
+                    <span class="cert-badge certified">Certified</span>
+                  </div>
+                  <h4 class="cert-title">Spark Optimization</h4>
+                  <p class="cert-detail">Advanced techniques for optimizing Apache Spark workloads, query tuning, and
+                    distributed computation performance on Databricks platform.</p>
+                  <div class="cert-skills">
+                    <span class="tech-pill">Apache Spark</span>
+                    <span class="tech-pill">Databricks</span>
+                    <span class="tech-pill">Optimization</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cert-item reveal-up" id="cert-nptel">
+                <div class="cert-dot nptel-dot"></div>
+                <div class="cert-card glass-card tilt-card">
+                  <div class="cert-header">
+                    <div class="cert-org">
+                      <span class="cert-org-icon" aria-hidden="true">🎓</span>
+                      <span>NPTEL · IIT</span>
+                    </div>
+                    <div class="cert-awards">
+                      <span class="cert-badge elite">Elite</span>
+                      <span class="cert-badge silver">Silver</span>
+                    </div>
+                  </div>
+                  <h4 class="cert-title">Machine Learning</h4>
+                  <p class="cert-detail">Comprehensive ML curriculum covering supervised/unsupervised learning, neural
+                    networks, and probabilistic models. Awarded Elite + Silver distinction for exceptional performance.
+                  </p>
+                  <div class="cert-skills">
+                    <span class="tech-pill">Machine Learning</span>
+                    <span class="tech-pill">Neural Networks</span>
+                    <span class="tech-pill">Statistics</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ CONTACT -->
+    <section id="contact" class="section contact-section" aria-label="Contact">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-tag">06 / Contact</span>
+          <h2 class="section-title">Let's Build Something <span class="gradient-text">Extraordinary</span></h2>
+          <p class="section-subtitle">Open to AI/ML roles, data engineering opportunities, and impactful collaborations.
+          </p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-card glass-card tilt-card reveal-up" id="contact-email">
+            <div class="contact-icon" aria-hidden="true">✉️</div>
+            <h4>Email</h4>
+            <a href="mailto:pmukesh2006@gmail.com" class="contact-link">pmukesh2006@gmail.com</a>
+          </div>
+          <div class="contact-card glass-card tilt-card reveal-up" id="contact-linkedin">
+            <div class="contact-icon" aria-hidden="true">💼</div>
+            <h4>LinkedIn</h4>
+            <a href="https://www.linkedin.com/in/mukesh-p-4a3873297/" class="contact-link" target="_blank"
+              rel="noopener noreferrer">linkedin.com/in/mukesh-p</a>
+          </div>
+          <div class="contact-card glass-card tilt-card reveal-up" id="contact-github">
+            <div class="contact-icon" aria-hidden="true">⚙️</div>
+            <h4>GitHub</h4>
+            <a href="https://github.com/Mukesh631102" class="contact-link" target="_blank"
+              rel="noopener noreferrer">github.com/Mukesh631102</a>
+          </div>
+        </div>
+        <div class="contact-cta reveal-up">
+          <a href="mailto:pmukesh2006@gmail.com" class="cta-primary large" id="email-cta-btn">
+            <span>Send a Message</span>
+            <svg width="18" height="18" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════ FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-logo"><span class="logo-bracket">[</span>MP<span class="logo-bracket">]</span></span>
+        <p class="footer-text">Crafted with precision by Mukesh P — turning data into decisions.</p>
+        <div class="footer-socials">
+          <a href="mailto:pmukesh2006@gmail.com" class="footer-social-link" aria-label="Email Mukesh">✉️
+            pmukesh2006@gmail.com</a>
+          <a href="https://www.linkedin.com/in/mukesh-p-4a3873297/" target="_blank" rel="noopener noreferrer"
+            class="footer-social-link" aria-label="LinkedIn">💼 LinkedIn</a>
+          <a href="https://github.com/Mukesh631102" target="_blank" rel="noopener noreferrer" class="footer-social-link"
+            aria-label="GitHub">⚙️ GitHub</a>
+        </div>
+        <p class="footer-copy">© 2026 Mukesh P. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
